@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons|Roboto");
 
 $bgColor: #3a3d55;
-$slideBgColor: rgba(255,255,255,0.3);
+$slideBgColor: rgba(255, 255, 255, 0.3);
 $slideBallColor: white;
 $slideBallIconColor: black;
 $slideTextColor: #3a3d55;
-
 
 @mixin center {
   display: flex;
@@ -79,5 +78,31 @@ body {
   color: white;
   a {
     color: white;
+  }
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  20%, 60% {
+    transform: rotate(-25deg)
+  }
+  40%, 80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
   }
 }
