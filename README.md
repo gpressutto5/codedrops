@@ -4,5 +4,7 @@ Some projects are too small to have their own repository. Some projects are too 
 
 These are my CodeDrops. Feel free to take a sip anytime. Just remember to tell your friends about it. 😉
 
+You can see them in action [here](https://gpressutto5.github.io/codedrops).
+
 ## License
 This repository falls under MIT license, unless there is a LICENSE file on project folder that says otherwise.
