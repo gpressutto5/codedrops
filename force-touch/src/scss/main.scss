@@ -21,17 +21,30 @@ body {
 }
 
 #video {
+  max-width: 100%;
   cursor: default;
   outline: 10px solid white;
-  box-shadow: 25px 25px 62px -14px rgba(0,0,0,0.7);
+  box-shadow: 25px 25px 62px -14px rgba(0, 0, 0, 0.7);
+  touch-action: none;
 }
 
 .absolute {
   position: absolute;
   &.top {
     top: -120px;
+    @media only screen and (max-width: 480px) {
+      top: -155px;
+    }
   }
   &.bottom {
     bottom: -60px;
+    @media only screen and (max-width: 480px) {
+      bottom: -75px;
+    }
   }
+}
+
+#wrapper {
+  position: relative;
+  max-width: calc(100% - 50px);
 }

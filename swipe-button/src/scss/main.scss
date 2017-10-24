@@ -32,8 +32,13 @@ body {
   background-color: $slideBgColor;
   width: 400px;
   height: 80px;
-  border: white;
   border-radius: 40px;
+  @media only screen and (max-width: 480px) {
+    width: calc(0.675 * 400px);
+    height: calc(0.675 * 80px);
+    border-radius: calc(0.675 * 40px);
+  }
+  border: white;
   @include center;
 }
 
@@ -43,10 +48,16 @@ body {
   height 0.3s;
   position: absolute;
   left: -10px;
-  background-color: $slideBallColor;
   width: 100px;
   height: 100px;
+  @media only screen and (max-width: 480px) {
+    left: calc(0.675 * -10px);
+    width: calc(0.675 * 100px);
+    height: calc(0.675 * 100px);
+  }
+  background-color: $slideBallColor;
   border-radius: 50%;
+  touch-action: none;
   @include center;
   &.unlocked {
     transition: all 0.3s;
@@ -60,12 +71,18 @@ body {
 .material-icons {
   color: $slideBallIconColor;
   font-size: 50px;
+  @media only screen and (max-width: 480px) {
+    font-size: calc(0.675 * 50px);
+  }
   @include nonselect;
 }
 
 .slide-text {
   color: $slideTextColor;
   font-size: 24px;
+  @media only screen and (max-width: 480px) {
+    font-size: calc(0.675 * 24px);
+  }
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   @include nonselect;

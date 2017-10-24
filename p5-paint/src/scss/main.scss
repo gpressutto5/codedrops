@@ -6,11 +6,15 @@ body {
   margin: 0;
   background: linear-gradient(to right, #fc466b, #3f5efb);
   color: white;
+  @media only screen and (max-width: 480px) {
+    padding-top: 80px;
+  }
 }
 
 canvas {
   cursor: default;
   outline: thick solid black;
+  touch-action: none;
 }
 
 .github-corner:hover .octo-arm {
