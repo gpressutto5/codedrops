@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/icon?family=Roboto");
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  @include center;
+}
+
+#video {
+  cursor: default;
+  outline: 10px solid white;
+  box-shadow: 25px 25px 62px -14px rgba(0,0,0,0.7);
+}
+
+.absolute {
+  position: absolute;
+  &.top {
+    top: -120px;
+  }
+  &.bottom {
+    bottom: -60px;
+  }
+}
